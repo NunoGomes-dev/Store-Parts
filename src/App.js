@@ -1,24 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import Routes from "./Routes";
+import { Box, useColorModeValue as mode } from "@chakra-ui/react";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Box height="100vh" overflow="hidden" position="relative">
+      <Box
+        id="container_box"
+        bg={mode("white", "gray.800")}
+        flex="1"
+        overflowY="auto"
+        w="full"
+      >
+        <Routes />
+      </Box>
+    </Box>
   );
 }
 
