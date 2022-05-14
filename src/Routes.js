@@ -6,7 +6,7 @@ const RenderRoutes = () => {
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Dashboard />} />
-        <Route path="/parts/:id?" element={<EditPart />} />
+        <Route path="/parts/:name/:type/:price" element={<EditPart />} />
       </Routes>
     </BrowserRouter>
   );

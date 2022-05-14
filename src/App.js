@@ -5,13 +5,7 @@ import { Box, useColorModeValue as mode } from "@chakra-ui/react";
 function App() {
   return (
     <Box height="100vh" overflow="hidden" position="relative">
-      <Box
-        id="container_box"
-        bg={mode("white", "gray.800")}
-        flex="1"
-        overflowY="auto"
-        w="full"
-      >
+      <Box h="full" w="full" bg={mode("white", "gray.800")} overflowY="auto">
         <Routes />
       </Box>
     </Box>
